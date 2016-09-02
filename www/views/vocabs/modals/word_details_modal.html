@@ -1,0 +1,29 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <button class="button icon ion-ios-close-empty button-functional" ng-click="exitModal()"></button>
+        <h1 class="title general-header">EDIT</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div id="edit-def-modal" class="list wordinfo-form">
+            <h4 class="word-h4">{{wordInfo.word}}</h4>
+            
+            <div class="wordinfo-input-group">
+                <h5 class="wordinfo-subtitle gray-color">Definition</h5>
+                <label class="item item-input bottom-bordered">
+                    <textarea id="edited-def-textarea" class="wordinfo-textarea" type="text" ng-model="edited.def" msd-elastic="\n"></textarea>
+                </label>
+            </div>
+            
+            <div class="wordinfo-input-group">
+                <h5 class="wordinfo-subtitle gray-color">Example</h5>
+                <label class="item item-input bottom-bordered">
+                    <textarea id="edited-example-textarea" class="wordinfo-textarea" type="text" ng-model="edited.example" msd-elastic="\n"></textarea>
+                </label>
+            </div>
+           
+            <div class="standard-button-group">
+                <a class="button button-small button-100pct button-primary standard-button" ng-click="updateInfo()">Save</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

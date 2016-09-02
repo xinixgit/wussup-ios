@@ -1,0 +1,16 @@
+<ion-view view-title="{{word}}">
+    <ion-nav-buttons side="primary">
+        <button class="button icon ion-ios-arrow-back md-icon button-functional" ng-click="goBack()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button icon ion-ios-compose-outline md-icon button-functional" ng-click="showEditDefModal()"></button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <h4 class="word-h4">{{wordInfo.word}}</h4>
+        <p class="word-def-parag">
+            {{wordInfo.def}}    <br \>
+            <span class="gray-color italic" ng-if="wordInfo.example">"{{wordInfo.example}}"</span>
+        </p>
+        <p class="next-review-parag gray-color">Next Review Time: {{wordInfoExtra.nextReviewTime}}</p>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-modal-view cache-view="false">
+    <ion-header-bar>
+        <button class="button icon ion-ios-close-empty button-functional" ng-click="exitAuthenModal(false)"></button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list wordinfo-form">
+            <h4 id="signin-message">Please Sign In Or Register First!</h4>
+            
+            <div class="wordinfo-input-group">
+                <label class="item item-input bottom-bordered">
+                    <input id="input-username" class="wordinfo-textarea primary-input" type="text" ng-model="auth.username" ng-change="auth.usernameChanged();" placeholder="Username"></input>
+                </label>
+            </div>
+            
+            <div class="wordinfo-input-group">
+                <label class="item item-input bottom-bordered">
+                    <input id="input-password" class="wordinfo-textarea primary-input" type="text" ng-model="auth.password" placeholder="Password"></input>
+                </label>
+            </div>
+           
+            <div class="standard-button-group">
+                <a class="button button-small button-100pct button-primary standard-button" ng-click="auth.signIn()" ng-disabled="auth.disableInput">Sign In</a>
+                
+                <a class="button button-small button-100pct button-complementary standard-button" ng-click="auth.register()" ng-disabled="auth.disableInput">Register</a>
+            </div>
+        
+            <br \>            
+        </div>       
+    </ion-content>
+</ion-modal-view>

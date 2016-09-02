@@ -1,0 +1,23 @@
+<ion-view cache-view="false">
+    <ion-nav-title>REVIEW (<span ng-bind="viewControl.wordCount"></span>)</ion-nav-title>
+    <ion-content class="padding-10-ion-content">
+        <h4 class="word-h4 review-word-h4">{{info.word}}</h4>
+        <div id="review-check-button-group">
+            <p id="word-example" class="review-center-box gray-color" ng-cloak ng-if="viewControl.defButtonVisible">
+<!--                <span ng-if="info.example">"{{info.example}}"</span>-->
+            </p>
+            <a class="button button-small button-70pct button-primary" ng-click="showDefinition()" ng-disabled="viewControl.disableShowDefButton" ng-cloak ng-if="viewControl.defButtonVisible">Definition</a>
+        </div>
+        
+        <p id="no-review-parag" class="no-review-parag gray-color" ng-cloak ng-if="viewControl.noReviewVisible">
+            You do not have any words to review today!
+        </p>
+
+        <div id="reveal-def-div" ng-cloak ng-if="viewControl.defVisible">
+            <h5 id="def-h5" class="gray-color review-center-box">Definition</h5>
+            <p id="review-def-word-def-p" class="word-def-parag review-center-box">{{info.def}}</p>
+            <a class="button button-small button-70pct button-complementary" ng-click="getNextReviewedWord(true)">Passed</a>
+            <a class="button button-small button-70pct button-primary" ng-click="getNextReviewedWord(false)">Review</a>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- WidgeId is gonna be the BundleID used for the app in AppStore -->
+<widget id="com.idatech.wussup" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Wussup</name>
+  <description>
+        An app to learn English idioms in a professional way.
+    </description>
+  <author email="wussup@idatech.com" href="http://idatech.com/">
+      IdaTech Wussup Team
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  
+  <!-- Enforce portrait oritentation -->
+  <preference name="Orientation" value="portrait" />
+  
+  <!-- Backup WebStorage disabled for Ionic Apps -->
+  <preference name="BackupWebStorage" value="none"/>
+  
+  <!-- System time and battery appears white -->
+  <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+  <preference name="StatusBarStyle" value="lightcontent" />
+  
+  <feature name="StatusBar">
+      <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <feature name="Notification">
+      <param name="ios-package" value="CDVNotification" />
+  </feature>
+</widget>

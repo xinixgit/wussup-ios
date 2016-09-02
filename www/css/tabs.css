@@ -1,0 +1,19 @@
+/**
+ * Manages the style of tabs.html
+ */
+.wsup-tabs-bottom a.tab-item {
+    padding-top: 5px;   
+}
+
+.wsup-tabs-bottom span.tab-title {
+    font-size: 9px;
+}
+
+.wsup-tabs-bottom .tab-item .icon {
+    font-size: 25px;
+    height: 25px;
+}
+
+.tabs {
+    background-color: #fff;   
+}

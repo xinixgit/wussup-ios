@@ -1,0 +1,279 @@
+body {
+    font-size: 14px;
+}
+
+/* 
+  Allow angular.js to be loaded in body, hiding cloaked elements until 
+  templates compile.  The !important is important given that there may be 
+  other selectors that are more specific or come later and might alter display.  
+ */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+[nav-bar-transition=ios] [nav-bar=active] .bar, 
+[nav-bar-transition=ios] [nav-bar=entering] .bar,
+.bar-header {
+    background-color: #62b9ff;   
+}
+
+.ion-header-bar h1.title,
+.bar.bar-stable .title,
+.bar .title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.activated, 
+ion-tabs.tabs-color-active-positive .tab-item.active, 
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
+    color: #62b9ff;    
+}
+
+.padding-10-ion-content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/*
+ * Buttons & Button Groups
+ */
+.button-70pct {
+    width: 70%;   
+    margin: 4px auto;
+    font-weight: bold;
+}
+
+.button.button-100pct,
+.button-100pct {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    font-weight: bold;
+}
+
+.button .button-round,
+.button-round {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 60px;
+    border-radius: 90px;
+}
+
+.button-primary,
+.button.button-primary {
+    border: 1px solid #62b9ff;
+    background-color: #62b9ff;
+    color: #fff;
+}
+
+.button-complementary,
+.button.button-complementary {
+    border: 1px solid #62b9ff;
+    background-color: #fff;
+    color: #62b9ff;
+}
+
+.button-functional,
+.button.button-functional,
+.button.button-functional:hover,
+.bar-stable.button.button-functional {
+    border: none;  
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+div.standard-button-group {
+    margin-top: 80px;
+}
+
+a.standard-button,
+button.standard-button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;   
+}
+
+
+
+/*
+ * Icons
+ */
+.bar .button.md-icon:before {
+    font-size: 24px;  
+    font-weight: 600;
+}
+
+.bar .button.ion-ios-close-empty:before {
+    font-size: 33px;   
+    font-weight: 600;
+}
+
+.bar .button.ion-ios-folder-outline:before {
+    font-size: 22px;  
+    font-weight: 600;
+}
+
+
+
+/*
+ * Colors
+ */
+.gray-color {
+    color: #B6B4B4;   
+}
+
+/* Primary color is twitter blue. */
+.primary-color {
+    color: #62b9ff;
+}
+
+/* Complementary color is a shade of orange. */
+.secondary-color, span.secondary-color {
+    color: #FF4A00;
+}
+
+.gray-color-bordered, 
+textarea.gray-color-bordered,
+input.gray-color-bordered {
+    border: 1px solid #B6B4B4;    
+}
+
+
+/*
+ * Modal related
+ */
+ion-modal-view.message-modal-view {
+    background: transparent;
+}
+
+ion-content.message-modal-content {
+    top: initial;
+    bottom: 0;   
+}
+
+ion-content.message-modal-content div.message-modal-btn-group {
+    margin-top: 10px;   
+}
+
+div.message-modal-btn-group .button.button-primary {
+    border: 1px solid #62b9ff;
+}
+
+div.message-modal-btn-group .button.button-complementary {
+    border: 1px solid #fff;
+}
+
+div.error-message-body {
+    border-radius: 2px;
+    padding: 20px 20px;
+    background: #fff;
+    color: #000;
+}
+
+
+
+/*
+ * Inputs
+ */
+input[type=text].primary-input,
+textarea.primary-input {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* SEARCH INPUT */
+div.top-search-div input.top-search-input,
+input.top-search-input {
+    height: 22px;   
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+input.top-search-input i.ion-ios7-search:before {
+    font-weight: 600;   
+}
+
+div.top-search-div {
+    padding-right: 0px;
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #eee;
+}
+
+div.top-search-div label.item-input-wrapper {
+    background-color: #fff;
+}
+
+
+/*
+ * MISC.
+ */
+bottom-bordered,
+label.bottom-bordered,
+input.bottom-bordered {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.icon-err-msg {
+    margin-right: 6px;   
+}
+
+.italic {
+    font-style: italic;
+}
+
+.hide,
+div.hide {
+    display: none;   
+}
+
+.visible,
+div.visible {
+    display: block;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

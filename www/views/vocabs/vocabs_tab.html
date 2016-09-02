@@ -1,0 +1,14 @@
+<ion-view cache-view="false">
+    <ion-nav-title>VOCABS (<span ng-bind="vocabs.wordCount"></span>)</ion-nav-title>
+    <ion-nav-buttons side="secondary">
+        <button class="button icon md-icon ion-ios7-search button-functional" ng-click="showSearchModal()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list id="review-list">
+            <ion-item class="item-remove-animate item-icon-right" ng-repeat="(wordKey, info) in wordMap" type="item-text-wrap" href="#/tab/vocab/{{wordKey}}">
+                <h2>{{info.word}}</h2>
+                <i class="icon ion-ios-close-empty icon-accessory icon-close" ng-click="confirmDelete($event, info)"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-view view-title="ADD">
+    <ion-nav-buttons side="primary">
+        <button class="button icon md-icon ion-ios7-search button-functional" ng-click="showSearchDefModal()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="secondary">
+        <button class="button icon ion-ios-folder-outline button-functional" ng-click="showSavedWordModal()"></button>
+    </ion-nav-buttons>
+    <ion-content class="padding">
+        <div class="list wordinfo-form">
+            <div class="wordinfo-input-group">
+                <label class="item item-input bottom-bordered">
+                    <input class="primary-input" ng-model="search.word" type="text" placeholder="Word" ng-change="searchWordChanged()">
+                </label>
+            </div>
+            
+            <div class="wordinfo-input-group">
+                <label class="item item-input bottom-bordered">
+                    <textarea id="addnew-word-def-input" class="wordinfo-textarea primary-input" type="text" ng-model="search.def" msd-elastic placeholder="Definition"></textarea>
+                </label>
+            </div>
+            
+            <div class="wordinfo-input-group">
+                <label class="item item-input bottom-bordered">
+                    <textarea id="addnew-word-example-input" class="wordinfo-textarea primary-input" type="text" ng-model="search.example" placeholder="Example" msd-elastic></textarea>
+                </label>
+            </div>
+           
+            <div class="standard-button-group">
+                <a class="button button-small button-100pct button-primary standard-button" ng-click="addNewDef()" ng-disabled="search.existingInfo">Add</a>
+                
+                <a class="button button-small button-100pct button-complementary standard-button" ng-click="saveWord()" ng-disabled="search.existingInfo">Save</a>
+            </div>
+        
+            <br \>            
+        </div>       
+    </ion-content>
+</ion-view>

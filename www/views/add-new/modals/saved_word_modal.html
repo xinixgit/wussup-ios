@@ -1,0 +1,14 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <button class="button icon ion-ios-close-empty button-functional" ng-click="exitModal()"></button>
+        <h1 class="title general-header">SAVED</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list id="flash-word-list">
+            <ion-item class="item-remove-animate item-icon-right" ng-repeat="savedWord in sw.savedWordList" type="item-text-wrap" ng-click="savedWordClicked('{{savedWord}}')">
+                <h2>{{savedWord}}</h2>
+                <i class="icon ion-ios-close-empty icon-accessory icon-close" ng-click="removeSavedWord('{{savedWord}}')"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

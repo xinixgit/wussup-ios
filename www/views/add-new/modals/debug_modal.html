@@ -1,0 +1,12 @@
+<ion-modal-view cache-view="false">
+    <ion-header-bar>
+        <button class="button icon ion-ios-close-empty button-functional" ng-click="exitDebugModal()"></button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <h2>{{debug.currentDate}}</h2>
+        <div ng-repeat="(word, info) in debug.wordMap" >
+            <div style="font-weight:600">{{info.word}}</div>
+            Review time: {{info.nextReviewTime}}, Add date: {{info.addDate}}. Msg: {{info.msg}}
+        </div>
+    </ion-content>
+</ion-modal-view>

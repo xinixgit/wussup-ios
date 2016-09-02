@@ -1,0 +1,29 @@
+.word-h4{
+    margin-bottom: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.word-def-parag {
+    font-size: 14px;
+}
+
+.next-review-parag {
+    font-size: 11px;
+    margin-top: 80px;
+}
+
+/* EDIT DEF MODAL */
+.wordinfo-subtitle {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;   
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#edit-def-modal .standard-button-group {
+    margin-top: 100px;   
+}

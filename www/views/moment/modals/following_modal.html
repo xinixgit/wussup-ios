@@ -1,0 +1,15 @@
+<ion-modal-view cache-view="false">
+    <ion-header-bar>
+        <button class="button icon ion-ios-close-empty button-functional" ng-click="following.hideModal()"></button>
+        <h1 class="title general-header">FOLLOWING</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list id="review-list">
+            <ion-item class="item-remove-animate item-icon-left item-icon-right" ng-repeat="username in following.followingList" type="item-text-wrap">
+                <i class="icon ion-ios-person icon-accessory icon-close"></i>
+                <h2>{{username}}</h2>
+                <i class="icon ion-ios-close-empty icon-accessory icon-close" ng-click="following.unfollow(username)"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>  
+</ion-modal-view>

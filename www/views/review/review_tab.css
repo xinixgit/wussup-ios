@@ -1,0 +1,45 @@
+.no-review-parag {
+    margin-left: auto;
+    margin-right: auto;
+    width: 162px;
+    font-size: 16px;
+}
+
+.review-word-h4 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#review-check-button-group {
+    text-align: center;   
+    min-height: 60px;
+}
+
+#reveal-def-div {
+    text-align: center;  
+}
+
+#def-h5 {
+    margin-top: 30px;   
+}
+
+#word-example {
+    text-align: left;
+    min-height: 120px;
+    margin-bottom: 20px;
+}
+
+.review-center-box {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#review-def-word-def-p {
+    margin-bottom: 30px;    
+}
+
+.review-hidden {
+    display: none;   
+}

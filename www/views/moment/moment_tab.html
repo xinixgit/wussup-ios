@@ -1,0 +1,27 @@
+<ion-view cache-view="false">
+    <ion-nav-title>MOMENT</ion-nav-title>
+    <ion-nav-buttons side="secondary">
+        <button class="button icon md-icon ion-ios-settings button-functional" ng-click="showSettings()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item item-button-left acti-item" ng-repeat="acti in actiList">
+                <button class="button button-acti" ng-show="acti.type == 'recommend_def'" ng-click="addWord(acti.content.recommended_def)">
+                    <i class="icon ion-ios-plus-empty"></i>
+                </button>
+                <div ng-show="acti.type == 'recommend_def'">
+                    <h2>{{acti.username}} <span class="acti-verb">recommended</span></h2>
+                    <p>{{acti.content.recommended_def}}</p>
+                </div>
+                
+                <button class="button button-acti" ng-show="acti.type == 'add_def'" ng-click="addWord(acti.content.added_word)">
+                    <i class="icon ion-ios-plus-empty"></i>
+                </button>
+                <div ng-show="acti.type == 'add_def'">
+                    <h2>{{acti.username}} <span class="acti-verb">added</span></h2>
+                    <p>{{acti.content.added_word}}</p>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
