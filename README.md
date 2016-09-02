@@ -1,1 +1,4 @@
 # wussup-ios
+This my pratice project to work on the Ionic framework. It's basically an elegant UI theme built on top of the famous Cordova which allows you to build iOS app with javascript (angular.js in this case).
+
+I tend to build an English learning app that allows people to add words they confronted during their daily lives, and review them later in increasing interval. By allowing people to dynamically add their vocabulary list as desired, it increases the relevance of the words to their lives, easier for them to associate the words with the scene it was being used. The review interval is increasing so that during the early period when people tend to forget the words quickly, they would have more frequent reviews, and as the days go by and the memory sinked in, review frequency is reduced to avoid adding burdens to the study.
